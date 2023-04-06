@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    font: normal bolder 1em arial, helvetica, verdana, sans-serif;
+    background-image: linear-gradient(to right, #d1efff, #63a9cf );
+    background-attachment: fixed;
+}
+h1{
+    color: #08496d;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: overline;
+}
+h2{
+    font-size: 1.2em;
+    color: #E08B1D;
+    text-align: center;
+}
+#links{
+    color: #945300;
+    text-align: left;
+}
+#imagem{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
