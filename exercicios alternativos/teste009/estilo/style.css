@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+:root{
+    --cor1: #BF3B53;
+    --cor2: #997c26;
+    --cor3: #3BB2BF;
+    --cor4: #182531;
+
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Alkatra', cursive;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html, body{
+    min-height: 100vh;
+    font-family: var(--font1);
+}
+p{
+    line-height: 1.5em;
+    text-indent: 20px;
+    font-size: 1.2em;
+    padding-bottom: 40px;
+}
+h1, h2{
+    font-family: var(--font2);
+}
+header{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header > h1{
+    font-size: 4em;
+}
+
+main{
+    max-width: 100vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    margin: auto;
+}
+main h1{
+    text-align: center;
+    color: var(--cor2);
+    padding: 30px 0px;
+}
+main h2{
+    padding: 20px 0px;
+    color: var(--cor1);
+}
+
+.paralax{
+    min-height: 500px;
+    background-color: rgb(27, 27, 27);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px black;
+    background-position: center center;
+    background-size: cover;
+}
+#img1{
+    background-image: url('../imagens/GoW-full.jpg');
+}
+#img2{
+    background-image: url('../imagens/tlou-full.jpg');
+}
+#img3{
+    background-image: url('../imagens/elden-80.png');
+}
+footer{
+    background-color: var(--cor4);
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+footer p{
+    padding-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(93, 207, 245);
+}
