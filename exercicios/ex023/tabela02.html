@@ -25,6 +25,13 @@ pt-br">
         .num{
             text-align: right;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            background-color: rgb(56, 56, 56);
+            color: white;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -40,10 +47,11 @@ pt-br">
             TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -157,7 +165,7 @@ pt-br">
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>213.317.639</strong></td>
         </tfoot>
     </table>
