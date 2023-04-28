@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Todos os tipos de formulario</h1>
+    <h2>Exemplos de Formularios</h2>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required maxlength="30" placeholder="Digite seu nome" autocomplete="name">
+            </p>
+            <p>
+                <label for="isen">Senha:</label>
+                <input type="password" name="sen" id="isen" required placeholder="Digite sua senha" maxlength="8" autocomplete="current-password">
+            </p>
+        </fieldset>
+        <p>
+            <label for="imes">Mes que estamos agora</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="date">Data completa do dia de ontem</label>
+            <input type="date" name="date" id="date">
+        </p>
+        <p>
+            <label for="hor">Horario de agora</label>
+            <input type="time" name="hor" id="hor">
+        </p>
+        <p>
+            <label for="not">O quanto você gostou do formulario</label>
+            <input type="number" name="not" id="not" min="0" max="10" step="0.5">
+        </p>
+        <fieldset>
+            <legend>"Login"</legend>
+            <p>
+                <label for="mail">E-mail</label>
+                <input type="email" name="mail" id="mail" required placeholder="Digite seu email">
+
+            </p>
+            <p>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" pattern="\(\d{2}\)^[0-9]{4,5}-[0-9]{4}$">
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="mas"><label for="mas">Masculino</label>
+                <input type="radio" name="sexo" id="fem"><label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="checkbox" name="f-end" id="f-end"><label for="f-end">Front End</label> <br>
+                <input type="checkbox" name="b-end" id="b-end"><label for="b-end">Back End</label> <br>
+                <input type="checkbox" name="fll" id="fll"><label for="fll">Full Stack</label>
+            </p>
+        </fieldset>
+        <p>
+            <label for="color">Cor</label>
+            <input type="color" name="color" id="color" value="#ff0000">
+        </p>
+        <p>
+            <label for="esc">Escolha um numero de 0-10</label>
+            <input type="range" name="esc" id="esc" min="0" max="10">
+        </p>
+        <p>
+            <label for="foto">Foto de perfil</label>
+            <input type="file" name="foto" id="foto">
+        </p>
+        <p>
+            <label for="cor">Escolha uma cor</label>
+            <select name="cor" id="cor">
+                <option>Vermelho</option>
+                <option>azul</option>
+                <option>amarelo</option>
+            </select>
+        </p>
+        <p>
+            <label for="prof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="opc">
+            <datalist id="opc">
+                <option>Professor</option>
+                <option>Desenvolvedor</option>
+                <option>Estudante</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
