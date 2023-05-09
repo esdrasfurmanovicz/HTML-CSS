@@ -20,6 +20,9 @@ Grandes Telas: acima de 1200px
         display: inline-block;
     }
     main{
-        min-height: 73vh;
+        min-height: 70vh;
+    }
+    footer{
+        max-height: 10vh;
     }
 }

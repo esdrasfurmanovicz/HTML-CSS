@@ -67,6 +67,12 @@ main{
     border-top: 0.4px solid white;
     margin-bottom: 50px;
 }
+#aside > h2{
+    border-top: 0.4px solid white;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
 button{
     background-color: #FFD993;
     width: 180px;
@@ -75,6 +81,7 @@ button{
     border-radius: 40px;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.441);
     text-align: center;
+    cursor: pointer;
 }
 strong{
     color: #FFA90B;
