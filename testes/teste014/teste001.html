@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 5px solid gray;
+            border-left: 5px solid white;
+            box-shadow: -3px 0px 20px rgba(255, 255, 255, 0.54);
+            background-image: radial-gradient(circle, black, rgba(255, 255, 255, 0.301) 97%);
+            animation: load 1.6s infinite;
+            animation-timing-function: cubic-bezier(0.29, 0.87, 0.3, 0.89);
+        }
+        @keyframes load{
+            to {
+                transform: rotate(0);
+            }
+            from {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
